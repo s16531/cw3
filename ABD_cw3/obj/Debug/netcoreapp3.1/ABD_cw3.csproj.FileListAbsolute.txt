@@ -3,3 +3,17 @@
 /Users/patrykdabrowski/Desktop/Szkoła/APBD/ABD_cw3/ABD_cw3/obj/Debug/netcoreapp3.1/ABD_cw3.MvcApplicationPartsAssemblyInfo.cache
 /Users/patrykdabrowski/Desktop/Szkoła/APBD/ABD_cw3/ABD_cw3/obj/Debug/netcoreapp3.1/ABD_cw3.AssemblyInfoInputs.cache
 /Users/patrykdabrowski/Desktop/Szkoła/APBD/ABD_cw3/ABD_cw3/obj/Debug/netcoreapp3.1/ABD_cw3.AssemblyInfo.cs
+/Users/patrykdabrowski/Desktop/Szkoła/APBD/ABD_cw3/ABD_cw3/bin/Debug/netcoreapp3.1/appsettings.Development.json
+/Users/patrykdabrowski/Desktop/Szkoła/APBD/ABD_cw3/ABD_cw3/bin/Debug/netcoreapp3.1/appsettings.json
+/Users/patrykdabrowski/Desktop/Szkoła/APBD/ABD_cw3/ABD_cw3/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
+/Users/patrykdabrowski/Desktop/Szkoła/APBD/ABD_cw3/ABD_cw3/bin/Debug/netcoreapp3.1/ABD_cw3.deps.json
+/Users/patrykdabrowski/Desktop/Szkoła/APBD/ABD_cw3/ABD_cw3/bin/Debug/netcoreapp3.1/ABD_cw3.runtimeconfig.json
+/Users/patrykdabrowski/Desktop/Szkoła/APBD/ABD_cw3/ABD_cw3/bin/Debug/netcoreapp3.1/ABD_cw3.runtimeconfig.dev.json
+/Users/patrykdabrowski/Desktop/Szkoła/APBD/ABD_cw3/ABD_cw3/bin/Debug/netcoreapp3.1/ABD_cw3.dll
+/Users/patrykdabrowski/Desktop/Szkoła/APBD/ABD_cw3/ABD_cw3/bin/Debug/netcoreapp3.1/ABD_cw3.pdb
+/Users/patrykdabrowski/Desktop/Szkoła/APBD/ABD_cw3/ABD_cw3/obj/Debug/netcoreapp3.1/ABD_cw3.RazorTargetAssemblyInfo.cache
+/Users/patrykdabrowski/Desktop/Szkoła/APBD/ABD_cw3/ABD_cw3/obj/Debug/netcoreapp3.1/staticwebassets/ABD_cw3.StaticWebAssets.Manifest.cache
+/Users/patrykdabrowski/Desktop/Szkoła/APBD/ABD_cw3/ABD_cw3/obj/Debug/netcoreapp3.1/staticwebassets/ABD_cw3.StaticWebAssets.xml
+/Users/patrykdabrowski/Desktop/Szkoła/APBD/ABD_cw3/ABD_cw3/obj/Debug/netcoreapp3.1/ABD_cw3.dll
+/Users/patrykdabrowski/Desktop/Szkoła/APBD/ABD_cw3/ABD_cw3/obj/Debug/netcoreapp3.1/ABD_cw3.pdb
+/Users/patrykdabrowski/Desktop/Szkoła/APBD/ABD_cw3/ABD_cw3/obj/Debug/netcoreapp3.1/ABD_cw3.genruntimeconfig.cache
