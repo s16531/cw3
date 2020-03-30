@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{38DE7EDC-8152-4E38-ABA1-68FF9E8D5CB0}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ABD_cw3/Controllers/StudentsController.cs">
+    <Files>
+      <File FileName="ABD_cw3/Controllers/StudentsController.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ABD_cw3" expanded="True">
+            <Node name="ABD_cw3" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="StudentsController.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ABD__cw3 FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
