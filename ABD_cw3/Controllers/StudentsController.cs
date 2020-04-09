@@ -2,7 +2,9 @@
 using ABD_cw3.DAL;
 using ABD_cw3.Models;
 using Microsoft.AspNetCore.Mvc;
-
+using System.Data;
+using System.Data.SqlClient;
+using System.Collections.Generic;
 
 namespace ABD_cw3.Controllers
 {
@@ -21,7 +23,26 @@ namespace ABD_cw3.Controllers
         [HttpGet]
         public IActionResult GetStudents(string orderBy)
         {
-            return Ok(_dbService.GetStudents());
+            var listOfStudents = new List<Student>();
+            using var con = new SqlConnection("Data Source=db-mssql;Initial Catalog=s16531;Integrated Security=True");
+            using (var com = new SqlCommand())
+            {
+                com.Connection = con;
+                com.CommandText = "select FirstName,Lastname,BirthDate,name,Semester from Student stu" +
+                                  "inner join Enrollment e on e.IdEnrollment = stu.IdEnrollment" +
+                                  "inner join Studies s on s.IdStudy = e.IdStudy";
+                con.Open();
+                var dr = com.ExecuteReader();
+                while (dr.Read())
+                {
+                    var st = new Student();
+                    st.FirstName = dr["FirstName"].ToString();
+                    st.LastName = dr["LastName"].ToString();
+                    st.IndexNumber = dr["IndexNumber"].ToString();
+                    listOfStudents.Add(st);
+                }
+            }
+            return Ok(listOfStudents);
         }
 
 

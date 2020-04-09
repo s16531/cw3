@@ -17,3 +17,10 @@
 /Users/patrykdabrowski/Desktop/Szkoła/APBD/ABD_cw3/ABD_cw3/obj/Debug/netcoreapp3.1/ABD_cw3.dll
 /Users/patrykdabrowski/Desktop/Szkoła/APBD/ABD_cw3/ABD_cw3/obj/Debug/netcoreapp3.1/ABD_cw3.pdb
 /Users/patrykdabrowski/Desktop/Szkoła/APBD/ABD_cw3/ABD_cw3/obj/Debug/netcoreapp3.1/ABD_cw3.genruntimeconfig.cache
+/Users/patrykdabrowski/Desktop/Szkoła/APBD/ABD_cw3/ABD_cw3/bin/Debug/netcoreapp3.1/System.Data.SqlClient.dll
+/Users/patrykdabrowski/Desktop/Szkoła/APBD/ABD_cw3/ABD_cw3/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/sni.dll
+/Users/patrykdabrowski/Desktop/Szkoła/APBD/ABD_cw3/ABD_cw3/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/sni.dll
+/Users/patrykdabrowski/Desktop/Szkoła/APBD/ABD_cw3/ABD_cw3/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/sni.dll
+/Users/patrykdabrowski/Desktop/Szkoła/APBD/ABD_cw3/ABD_cw3/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll
+/Users/patrykdabrowski/Desktop/Szkoła/APBD/ABD_cw3/ABD_cw3/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll
+/Users/patrykdabrowski/Desktop/Szkoła/APBD/ABD_cw3/ABD_cw3/obj/Debug/netcoreapp3.1/ABD_cw3.csproj.CopyComplete
