@@ -2,8 +2,8 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="ABD_cw3/Controllers/StudentsController.cs">
     <Files>
       <File FileName="ABD_cw3/Controllers/StudentsController.cs" Line="44" Column="14" />
-      <File FileName="ABD_cw3/DAL/MockDbService.cs" Line="12" Column="10" />
-      <File FileName="ABD_cw3/Models/Student.cs" Line="1" Column="1" />
+      <File FileName="ABD_cw3/DAL/MockDbService.cs" />
+      <File FileName="ABD_cw3/Models/Student.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
