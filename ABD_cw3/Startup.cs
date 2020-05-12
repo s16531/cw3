@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ABD_cw3.DAL;
+using ABD_cw3.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -27,7 +28,8 @@ namespace ABD_cw3
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddSingleton<IDbService, MockDbService>();
+            
+            services.AddTransient<IStudentsDbService, SqlServerDbService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
