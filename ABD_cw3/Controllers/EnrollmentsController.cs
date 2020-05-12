@@ -73,14 +73,32 @@ namespace ABD_cw3.Controllers
             response.BirthDate = enrollment.BirthDate;
             response.IndexNumber = enrollment.IndexNumber;
 
-            return Ok(response);
+            return Created("",response);
         }
 
         [Route("promotions")]
         [HttpPost]
-        public IActionResult PromoteStudents()
+        public IActionResult PromoteStudents(PromoteStudentRequest promoteStudentRequest)
         {
-            return Ok();
+            using var con = new SqlConnection("Data Source=db-mssql;Initial Catalog=s16531;Integrated Security=True");
+            using (var com = new SqlCommand())
+            {
+                com.Connection = con;
+
+                con.Open();
+                com.CommandText = "EXEC PromoteStudents2 @Studies = @requestStudies ,@Semester = @requestSemester";
+                com.Parameters.AddWithValue("requestStudies", promoteStudentRequest.Studies);
+                com.Parameters.AddWithValue("requestSemester", promoteStudentRequest.Semester);
+                var dr = com.ExecuteReader();
+                dr.Close();
+                dr = com.ExecuteReader();
+                PromoteStudentResponse enr = new PromoteStudentResponse();
+                enr.IdEnrollment = (int)dr["IdEnrollment"];
+                enr.Semester = (int)(dr["Semester"]);
+                enr.IdStudy = (int)(dr["IdStudy"]);
+                enr.StartDate = (DateTime)(dr["StartDate"]);
+                return Created("", enr);
+            }
         }
     }
 }
