@@ -1,10 +1,10 @@
 ﻿using System;
 using ABD_cw3.DAL;
-using ABD_cw3.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Data;
 using System.Data.SqlClient;
 using System.Collections.Generic;
+using ABD_cw3.Models;
 
 namespace ABD_cw3.Controllers
 {

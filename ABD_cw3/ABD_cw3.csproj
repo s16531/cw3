@@ -9,6 +9,9 @@
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
     <Folder Include="DAL\" />
+    <Folder Include="DTOs\" />
+    <Folder Include="DTOs\Requests\" />
+    <Folder Include="DTOs\Responses\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="System.Data.SqlClient" Version="4.8.1" />

@@ -1,9 +1,12 @@
 ﻿<Properties StartupConfiguration="{38DE7EDC-8152-4E38-ABA1-68FF9E8D5CB0}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ABD_cw3/Controllers/StudentsController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ABD_cw3/Controllers/EnrollmentsController.cs">
     <Files>
-      <File FileName="ABD_cw3/Controllers/StudentsController.cs" Line="44" Column="14" />
-      <File FileName="ABD_cw3/DAL/MockDbService.cs" />
+      <File FileName="ABD_cw3/Models/Enrollment.cs" Line="20" Column="1" />
       <File FileName="ABD_cw3/Models/Student.cs" />
+      <File FileName="ABD_cw3/Controllers/EnrollmentsController.cs" Line="86" Column="2" />
+      <File FileName="ABD_cw3/DTOs/Requests/EnrollStudentRequest.cs" />
+      <File FileName="ABD_cw3/DTOs/Responses/EnrollStudentResponse.cs" />
+      <File FileName="ABD_cw3/Controllers/StudentsController.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,9 +14,12 @@
           <Node name="ABD_cw3" expanded="True">
             <Node name="ABD_cw3" expanded="True">
               <Node name="Controllers" expanded="True">
-                <Node name="StudentsController.cs" selected="True" />
+                <Node name="EnrollmentsController.cs" selected="True" />
               </Node>
-              <Node name="DAL" expanded="True" />
+              <Node name="DTOs" expanded="True">
+                <Node name="Requests" expanded="True" />
+                <Node name="Responses" expanded="True" />
+              </Node>
               <Node name="Models" expanded="True" />
             </Node>
           </Node>
