@@ -5,7 +5,7 @@ using ABD_cw3.Models;
 
 namespace ABD_cw3.Services
 {
-    public class SqlServerDbService
+    public class SqlServerDbService : IStudentsDbService
     {
         public SqlServerDbService()
         {
@@ -91,6 +91,35 @@ namespace ABD_cw3.Services
                 enr.StartDate = (DateTime)(dr["StartDate"]);
                 return enr;
             }
+        }
+
+        public bool CheckIndexNumber(string index)
+        {
+            using (var con = new SqlConnection("Data Source=db-mssql;Initial Catalog=s16531;Integrated Security=True"))
+            using (var com = new SqlCommand())
+            {
+                com.Connection = con;
+                //Tutaj sie zatrzymuje
+                con.Open();
+                com.CommandText = "select * from Student where IndexNumber=@index";
+                com.Parameters.AddWithValue("index", index);
+                var dr = com.ExecuteReader();
+                if (dr.Read())
+                {
+                    return true;
+                }
+                else return false;
+            }
+        }
+
+        public Enrollment PromoteStudents(int semester, string studies)
+        {
+            throw new NotImplementedException();
+        }
+
+        Enrollment IStudentsDbService.EnrollStudent(EnrollStudentRequest request)
+        {
+            throw new NotImplementedException();
         }
     }
 }

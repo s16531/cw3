@@ -8,5 +8,6 @@ namespace ABD_cw3.Services
     {
         Enrollment EnrollStudent(EnrollStudentRequest request);
         Enrollment PromoteStudents(int semester, string studies);
+        bool CheckIndexNumber(string index);
     }
 }
