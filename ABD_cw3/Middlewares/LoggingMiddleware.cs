@@ -15,6 +15,7 @@ namespace ABD_cw3.Middlewares
         }
         public async Task InvokeAsync(HttpContext httpContext)
         {
+            httpContext.Request.EnableBuffering();
             string filePath = "logi.txt";
             string fullRequest = httpContext.Request.Method.ToString() + " " +
                                  httpContext.Request.Path;
@@ -35,7 +36,6 @@ namespace ABD_cw3.Middlewares
                 sw.WriteLine(fullRequest);
                 sw.WriteLine();
             }
-            httpContext.Request.Body.Seek(0, SeekOrigin.Begin);
             await _next(httpContext);
         }
     }
