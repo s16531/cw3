@@ -4,7 +4,7 @@ using ABD_cw3.Models;
 
 namespace ABD_cw3.DAL
 {
-    public class MockDbService : IDbService
+    public class MockDbService : IStudentsDbSerivce
     {
         private static IEnumerable<Student> _students;
 
