@@ -14,6 +14,7 @@
     <Folder Include="DTOs\Responses\" />
     <Folder Include="Services\" />
     <Folder Include="Middlewares\" />
+    <Folder Include="Handlers\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="System.Data.SqlClient" Version="4.8.1" />

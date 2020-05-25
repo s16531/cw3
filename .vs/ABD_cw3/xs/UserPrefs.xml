@@ -1,33 +1,28 @@
 ﻿<Properties StartupConfiguration="{38DE7EDC-8152-4E38-ABA1-68FF9E8D5CB0}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ABD_cw3/Services/AuthenticationService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ABD_cw3/Handlers/PasswordHandler.cs">
     <Files>
       <File FileName="ABD_cw3/Middlewares/LoggingMiddleware.cs" Line="37" Column="32" />
       <File FileName="ABD_cw3/Services/LoggerService.cs" />
       <File FileName="ABD_cw3/Controllers/EnrollmentsController.cs" Line="14" Column="34" />
-      <File FileName="ABD_cw3/Services/IStudentsDbService.cs" Line="16" Column="1" />
-      <File FileName="ABD_cw3/Services/SqlServerDbService.cs" Line="148" Column="6" />
+      <File FileName="ABD_cw3/Services/IStudentsDbService.cs" Line="17" Column="1" />
+      <File FileName="ABD_cw3/Services/SqlServerDbService.cs" Line="163" Column="40" />
       <File FileName="ABD_cw3/Startup.cs" Line="53" Column="52" />
-      <File FileName="ABD_cw3/Controllers/StudentsController.cs" Line="162" Column="10" />
+      <File FileName="ABD_cw3/Controllers/StudentsController.cs" Line="151" Column="38" />
       <File FileName="ABD_cw3/DTOs/Requests/LoginRequest.cs" Line="10" Column="1" />
       <File FileName="ABD_cw3/DAL/IDbService.cs" Line="11" Column="9" />
       <File FileName="ABD_cw3/Program.cs" Line="1" Column="1" />
-      <File FileName="ABD_cw3/Services/AuthenticationService.cs" Line="11" Column="1" />
+      <File FileName="ABD_cw3/Services/AuthenticationService.cs" Line="12" Column="1" />
+      <File FileName="ABD_cw3/Handlers/PasswordHandler.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ABD_cw3" expanded="True">
             <Node name="ABD_cw3" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="DAL" expanded="True" />
-              <Node name="DTOs" expanded="True">
-                <Node name="Requests" expanded="True" />
+              <Node name="Handlers" expanded="True">
+                <Node name="PasswordHandler.cs" selected="True" />
               </Node>
-              <Node name="Middlewares" expanded="True" />
-              <Node name="Models" expanded="True" />
-              <Node name="Services" expanded="True">
-                <Node name="AuthenticationService.cs" selected="True" />
-              </Node>
+              <Node name="Services" expanded="True" />
               <Node name="appsettings.json" expanded="True" />
             </Node>
           </Node>
