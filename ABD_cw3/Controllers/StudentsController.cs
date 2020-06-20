@@ -5,6 +5,13 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Collections.Generic;
 using ABD_cw3.Models;
+using Microsoft.Extensions.Configuration;
+using System.Text;
+using ABD_cw3.DTOs.Requests;
+using ABD_cw3.Services;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
 
 namespace ABD_cw3.Controllers
 {
@@ -13,11 +20,13 @@ namespace ABD_cw3.Controllers
 
     public class StudentsController : ControllerBase
     {
-        private readonly IDbService _dbService;
+        private readonly IStudentsDbService _dbService;
+        private readonly IConfiguration _configuration;
 
-        public StudentsController(IDbService dbService)
+        public StudentsController(IStudentsDbService dbService, IConfiguration configuration)
         {
             _dbService = dbService;
+            _configuration = configuration;
         }
 
         [HttpGet]
@@ -132,6 +141,44 @@ namespace ABD_cw3.Controllers
         public IActionResult DeleteStudent(int id)
         {
             return Ok("DELTED");
+        }
+
+        [HttpPost]
+        [Route("login")]
+        public IActionResult Login(LoginRequest request)
+        {
+            var claims = _dbService.Login(request);
+            return Authorize(claims);
+        }
+
+        [HttpPost("refresh-token/{token}")]
+        public IActionResult Login(string token)
+        {
+            var claims = _dbService.Login(token);
+            return Authorize(claims);
+        }
+
+        private IActionResult Authorize(AuthenticationService result)
+        {
+            if (result == null)
+            {
+                return Unauthorized();
+            }
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["SecretKey"]));
+            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+            var token = new JwtSecurityToken(
+                issuer: "Gakko",
+                audience: "Students",
+                claims: result.Claims,
+                expires: DateTime.Now.AddMinutes(10),
+                signingCredentials: creds
+            );
+            return Ok(new
+            {
+                token = new JwtSecurityTokenHandler().WriteToken(token),
+                refreshToken = result.RefreshToken
+            });
+
         }
     }
 }

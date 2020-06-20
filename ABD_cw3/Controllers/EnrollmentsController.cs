@@ -5,11 +5,13 @@ using ABD_cw3.DTOs.Requests;
 using ABD_cw3.DTOs.Responses;
 using System.Data.SqlClient;
 using ABD_cw3.Services;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ABD_cw3.Controllers
 {
     [Route("api/enrollments")]
     [ApiController]
+    [Authorize(Roles="employee")]
     public class EnrollmentsController : ControllerBase
     {
         public EnrollmentsController()

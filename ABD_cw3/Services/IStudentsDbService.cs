@@ -10,7 +10,7 @@ namespace ABD_cw3.Services
         Enrollment EnrollStudent(EnrollStudentRequest request);
         Enrollment PromoteStudents(int semester, string studies);
         bool CheckIndexNumber(string index);
-        public AuthenticationResult Login(LoginRequestDto request);
-        public AuthenticationResult Login(string request);
+        public AuthenticationService Login(LoginRequest request);
+        public AuthenticationService Login(string request);
     }
 }
